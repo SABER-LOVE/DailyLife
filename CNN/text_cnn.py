@@ -62,9 +62,9 @@ class TextCNN(object):
             wiki_vector = []
             wiki_data_path = 'D:\\tensorflow\wiki.vector'
             wiki_dictionary = t_wiki_process.get_wiki_dic(wiki_data_path)
-            count = 0    #暂时输出前三个看效果
+            count = 0    #暂时输出100个看效果
             for key in wiki_dictionary:
-                #if count <= 10:
+                #if count <= 100:
                 word_embedding = wiki_dictionary[key]
                 wiki_vector.append(np.array(word_embedding))
                     #count += 1
